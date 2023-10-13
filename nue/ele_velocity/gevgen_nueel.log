@@ -1,0 +1,225 @@
+gevgen -p 14 -t 1000180400 --event-generator-list NuEElastic -n 1 -e 100 --tune G18_10a_00_000
+
+
+********************************************************************************************************
+
+oooooo   oooooo     oooo       .o.       ooooooooo.   ooooo      ooo ooooo ooooo      ooo   .oooooo.    
+ `888.    `888.     .8'       .888.      `888   `Y88. `888b.     `8' `888' `888b.     `8'  d8P'  `Y8b   
+  `888.   .8888.   .8'       .8"888.      888   .d88'  8 `88b.    8   888   8 `88b.    8  888           
+   `888  .8'`888. .8'       .8' `888.     888ooo88P'   8   `88b.  8   888   8   `88b.  8  888           
+    `888.8'  `888.8'       .88ooo8888.    888`88b.     8     `88b.8   888   8     `88b.8  888     ooooo 
+     `888'    `888'       .8'     `888.   888  `88b.   8       `888   888   8       `888  `88.    .88'  
+      `8'      `8'       o88o     o8888o o888o  o888o o8o        `8  o888o o8o        `8   `Y8bood8P'   
+                                                                                                        
+
+********************************************************************************************************
+
+                                THIS IS A DEVELOPMENT VERSION OF GENIE.
+                      IT HAS *NOT* BEEN FULLY VALIDATED AND IT HAS EXPERIMENTAL FEATURES.
+
+                                   USE THIS VERSION AT YOUR OWN RISK.
+
+ If you prefer to use a version with validated physics content, please see http://releases.genie-mc.org
+
+                            Site managers, please don't remove this notice!
+
+
+ GENIE will continue running in 15 seconds...
+
+
+
+
+
+*****************************************************************************************************************
+*                                                                                                               *
+*                                                   .oooooo.    oooooooooooo ooooo      ooo ooooo oooooooooooo  *
+*                                                  d8P'  `Y8b   `888'     `8 `888b.     `8' `888' `888'     `8  *
+*                                                 888            888          8 `88b.    8   888   888          * 
+*                        Ndyooym          dN      888            888oooo8     8   `88b.  8   888   888oooo8     *
+*                     Nds//+sdmoy       d+m       888     ooooo  888    "     8     `88b.8   888   888    "     * 
+*                   Nh+//ohN  m+s      N//syyN    `88.    .88'   888       o  8       `888   888   888       o  *
+*                 Ny+//od   Nh+oN       o///+      `Y8bood8P'   o888ooooood8 o8o        `8  o888o o888ooooood8  *
+*               Nh+//om   Nh+/yN       o///s                                                                    *
+*              d+//+d   my+/smmyhN    m///h                                      NEUTRINO MONTE CARLO GENERATOR *   
+*            Ns///yN NdyoshNNs///d   h////yN                                                                    *
+*           mo//om        ms///+m   d///////oyhmN                                           Version 999.999.999 *
+*          N+//yN       ms////+N    h////////////oym                                                            *
+*          s//h       ho/+///sN     N///////////////od                                  http://www.genie-mc.org *
+*         N+/h     my++yh+//y       s/////////////////oN                                                        *
+*         Ns/m Nmy++ymNh//+d        s//////////////////+m                                                       *
+*          NhssoshN  Ny//sN         m///////////////////+                                                       *
+*                  Nmo/+ohdmN        mo//////////////////h            NmmN                                      *
+*              ms/+s//o/-----:+sdN     mhso+ooys/////////o      mhs+/------/ohN                                 *
+*    Nhd     N+-/o+/o+------------/shN     Ndy+//////////+ mhs+:---------------om                               *
+*  mo/sN    m:/oo/oo:-----------------:://////////////////-----------------------y                              *
+*  y//d    Noo++o+:----------:------------:://///////////:-------:/+osyso/:-------h                             *
+*  Nyo+syysooo+/--------------::--------------:://///////:----::////+ossyso/------:                             *
+*     NNNNNs--------------------:/::-------------:://///:-:://////////oosyo+:------                             *
+*          y---------------------:////:::-----------:////////////////+o++++/:-----/                             *
+*          m-----------------------://////////////////////////////+so/--:---------y                             *
+*           +------------------------://////////////////////////+yy:---+oh/--:y+-/N                             *
+*           N/-------------------------://////////////////////ohy/-------yy--os-/m                              *
+*            No--------------------------://///////////////+shs/---------/d++/-oN                               *
+*              mo--------------------------:////////////+shyo:------------sy/sm                                 *
+*                Ny+:------------------------::://///oyhyo:--------------/sd                                    *
+*                    mhso+/:------------------:/+oyhyo/----------:/+syhm                                        *
+*                           NmddhyyyssssyyyhdmmNNNmhhhyyyyhhddmN                                                *
+*                                                                                                               *
+*                                                             Copyright (c) 2003-2023, The GENIE Collaboration  *
+*                                                                                                               *
+*                                                                                                               *
+* Luis Alvarez-Ruso [6], Costas Andreopoulos [9], Adi Ashkenazi [13], Joshua Barrow (10,13), Steve Dytman [12], * 
+*      Hugh Gallagher [14], Alfonso Andres Garcia Soto [5,6], Steven Gardiner [4], Matan Goldenberg [13],       * 
+*  Robert Hatcher [4], Or Hen [10], Igor Kakorin [8], Konstantin Kuzmin [7,8], Weijun Li [11], Xianguo Lu [15], *
+*          Anselmo Meregaglia [2], Vadim Naumov [8], Afroditi Papadopoulou [1], Gabriel Perdue [3],             *
+*   Komninos-John Plows [11], Marco Roda [9], Alon Sportes [13], Noah Steinberg [4], Vladyslav Syrotenko [14],  *
+*                         Júlia Tena Vidal [13], Jeremy Wolcott [14], and Qiyu Yan [3,15]                       *
+*                                                                                                               *
+*                                            (The GENIE Collaboration)                                          *
+*                                                                                                               *
+*                                      [1] Argonne National Laboratory (ANL)                                    *
+*                                 [2] CENBG, Université de Bordeaux, CNRS/IN2P3                                 *
+*                             [3] University of the Chinese Academy of Sciences (UCAS)                          *
+*                                 [4] Fermi National Accelerator Laboratory (FNAL)                              *
+*                                      [5] Harvard University, Dept. of Physics                                 *   
+*                                     [6] Instituto de Física Corpuscular (IFIC)                                *
+*      [7] Alikhanov Institute for Theoretical and Experimental Physics (ITEP) of NRC "Kurchatov Institute"     *
+*                                  [8] Joint Institute for Nuclear Research (JINR)                              *
+*                                   [9] University of Liverpool, Dept. of Physics                               *
+*                         [10] Massachusetts Institute of Technology (MIT), Dept. of Physics                    *
+*                                    [11] University of Oxford, Dept. of Physics                                *
+*                            [12] University of Pittsburgh, Dept. of Physics and Astronomy                      *
+*                              [13] Tel Aviv University, School of Physics and Astronomy                        *
+*                                [14] Tufts University, Dept. of Physics and Astronomy                          *
+*                                     [15] Warwick University, Dept. of Physics                                 *
+*                                                                                                               *
+*  Corresponding Author:                                                                                        *
+*  -                                                                                                            *
+*  Professor Costas Andreopoulos                                                                                *
+*  University of Liverpool, Department of Physics                                                               *
+*  Oliver Lodge Lab 316, Liverpool L69 7ZE, UK                                                                  *
+*  E-Mail: c.andreopoulos \at cern.ch                                                                           *
+*  Tel: +44-(0)1517-943201                                                                                      *
+*****************************************************************************************************************
+
+
+1696354912 NOTICE Messenger : [s] <SetPrioritiesFromXmlFile (136)> : Reading msg stream priorities from XML file: /sbnd/data/users/brindenc/genie/Generator_evmap/Generator/config/Messenger.xml
+1696354912 INFO TuneId : [n] <TuneId.cxx::Build (132)> : G18_10a_00_000 Tune configured 
+1696354912 NOTICE gevgen : [n] <gEvGen.cxx::GetCommandLineArgs (822)> : 
+
+****************************
+  gevgen job configuration  
+****************************
+
+1696354912 NOTICE gevgen : [n] <gEvGen.cxx::GetCommandLineArgs (825)> : MC Run Number: 0
+1696354912 NOTICE gevgen : [n] <gEvGen.cxx::GetCommandLineArgs (831)> : Random number seed was not set, using default
+1696354912 NOTICE gevgen : [n] <gEvGen.cxx::GetCommandLineArgs (834)> : Number of events requested: 1
+1696354912 NOTICE gevgen : [n] <gEvGen.cxx::GetCommandLineArgs (840)> : No input cross-section spline file
+1696354912 NOTICE gevgen : [n] <gEvGen.cxx::GetCommandLineArgs (843)> : Flux:  factors 
+1696354912 NOTICE gevgen : [n] <gEvGen.cxx::GetCommandLineArgs (845)> : Generate weighted events? 0
+1696354912 NOTICE gevgen : [n] <gEvGen.cxx::GetCommandLineArgs (847)> : Force interaction of all flux rays? 0
+1696354912 NOTICE gevgen : [n] <gEvGen.cxx::GetCommandLineArgs (854)> : Neutrino energy: 100
+1696354912 NOTICE gevgen : [n] <gEvGen.cxx::GetCommandLineArgs (857)> : Neutrino code (PDG): 14
+1696354912 NOTICE gevgen : [n] <gEvGen.cxx::GetCommandLineArgs (859)> : Target code (PDG) & weight fraction (in case of multiple targets): 
+1696354912 NOTICE gevgen : [n] <gEvGen.cxx::GetCommandLineArgs (865)> :  >> 1000180400 (weight fraction = 1)
+1696354912 NOTICE gevgen : [n] <gEvGen.cxx::GetCommandLineArgs (868)> : 
+
+1696354912 NOTICE gevgen : [n] <gEvGen.cxx::GetCommandLineArgs (870)> : Global running options:
+ GENIE tune: Standard GENIE tune: G18_10a_00_000
+ - Prefix ............... : G
+ - Year ................. : 18
+ - Major model ID ....... : 10
+ - Minor model ID ....... : a
+ - Tuned param set ID ... : 00
+ - Fit dataset ID ....... : 000
+ - Tune directory ....... : /sbnd/data/users/brindenc/genie/Generator_evmap/Generator/config/G18_10a
+ - Base directory ....... : /sbnd/data/users/brindenc/genie/Generator_evmap/Generator/config
+
+ Event generator list: NuEElastic
+ User-specified message thresholds : 
+ Cache file : 
+ Unphysical event mask (bits: 15 -> 0) : 1111111111111111
+ Event record print level : 3
+ MC job status file refresh rate: 50
+ Pre-calculate all free-nucleon cross-sections? : Yes
+
+1696354912 INFO RunOpt : [n] <RunOpt.cxx::BuildTune (94)> : Building tune G18_10a_00_000
+1696354912 INFO TuneId : [n] <TuneId.cxx::Build (132)> : G18_10a_00_000 Tune configured 
+1696354912 WARN AppInit : [n] <AppInit.cxx::XSecTable (86)> : No cross-section file was specified in the application inputs
+1696354912 WARN AppInit : [n] <AppInit.cxx::XSecTable (87)> : If none is loaded, event generation might be inefficient
+1696354912 ERROR AlgConfigPool : [s] <LoadRegistries (275)> : The XML doc doesn't exist! (filename : NuElectronXSec.xml)
+1696354912 ERROR AlgConfigPool : [s] <LoadAlgConfig (131)> : Error in loading config sets for algorithm = genie::NuElectronXSec
+1696354912 INFO ElcetronVelocity : [n] <ElectronVelocityMap.cxx::LoadConfig (61)> : Default global electron velocity model: genie::BohrElectronVelocity/Default
+1696354912 WARN Algorithm : [n] <Algorithm.cxx::FindConfig (157)> : No Configuration available for genie::XSecOnElectron/Default at the ConfigPool
+1696354912 NOTICE Ntp : [n] <NtpWriter.cxx::NtpWriter (45)> : Run number: 0
+1696354912 NOTICE Ntp : [n] <NtpWriter.cxx::NtpWriter (46)> : Requested G/ROOT tree format: [NtpMCEventRecord]
+1696354912 NOTICE Ntp : [n] <NtpMCJobConfig.cxx::Load (47)> : Converting configuration registries to TFolders
+1696354912 NOTICE Ntp : [n] <NtpMCJobEnv.cxx::TakeSnapshot (46)> : Taking environment snapshot and saving it in a TFolder
+1696354912 NOTICE gevgen : [n] <gEvGen.cxx::GenerateEventsAtFixedInitState (329)> : 
+ ** Will generate 1 events for 
+[-] [Init-State] 
+ |--> probe        : PDG-code = 14 (nu_mu)
+ |--> nucl. target : Z = 18, A = 40, PDG-Code = 1000180400 (Ar40)
+ |--> hit particle : no set
+ |--> hit quark    : no set
+ |--> probe 4P     : (E =            0, Px =            0, Py =            0, Pz =            0)
+ |--> target 4P    : (E =      37.2155, Px =            0, Py =            0, Pz =            0)
+ at Ev = 100 GeV
+1696354912 NOTICE gevgen : [n] <gEvGen.cxx::GenerateEventsAtFixedInitState (336)> :  *** Generating event............ 0
+1696354912 WARN XSecSplLst : [s] <SplineExists (109)> : No splines for tune G18_10a_00_000 were found!
+1696354912 NOTICE Rndm : [n] <RandomGen.cxx::SetSeed (84)> : Setting default random number seed at random number generator initialization: 65539
+1696354912 INFO NuEKinematics : [n] <NuEKinematicsGenerator.cxx::ProcessEventRecord (113)> : Trying: y = 0.675272
+1696354912 INFO NuEKinematics : [n] <NuEKinematicsGenerator.cxx::ProcessEventRecord (132)> : Selected: y = 0.675272
+1696354912 INFO NuETargetRemnant : [n] <NuETargetRemnantGenerator.cxx::AddElectronNeutrino (74)> : Adding final state lepton from e- vtx
+1696354912 INFO NuETargetRemnant : [n] <NuETargetRemnantGenerator.cxx::AddTargetNucleusRemnant (111)> : Adding nucleus [A = 40, Z = 18, pdgc = 1000180400]
+1696354912 NOTICE gevgen : [n] <gEvGen.cxx::GenerateEventsAtFixedInitState (348)> : Generated Event GHEP Record: 
+
+|------------------------------------------------------------------------------------------------------------------|
+|GENIE GHEP Event Record [print level:   3]                                                                        |
+|------------------------------------------------------------------------------------------------------------------|
+| Idx |          Name | Ist |        PDG |   Mother  | Daughter  |      Px |      Py |      Pz |       E |      m  | 
+|------------------------------------------------------------------------------------------------------------------|
+|   0 |         nu_mu |   0 |         14 |  -1 |  -1 |   4 |   4 |   0.000 |   0.000 | 100.000 | 100.000 |   0.000 | 
+|   1 |          Ar40 |   0 | 1000180400 |  -1 |  -1 |   2 |   3 |   0.000 |   0.000 |   0.000 |  37.216 |  37.216 | 
+|   2 |            e- |   0 |         11 |   1 |  -1 |   5 |   5 |   0.057 |   0.012 |   0.022 |   0.941 | **0.001 | M = 0.939 
+|   3 |          Ar40 |   1 | 1000180400 |   1 |  -1 |  -1 |  -1 |   0.000 |   0.000 |   0.000 |  37.216 |  37.216 | 
+|   4 |            e- |   1 |         11 |   0 |  -1 |  -1 |  -1 |   2.040 |   0.308 |  32.536 |  32.601 |   0.001 | P = (-0.063,-0.009,-0.998)
+|   5 |         nu_mu |   1 |         14 |   2 |  -1 |  -1 |  -1 |  -1.984 |  -0.296 |  67.486 |  68.340 | **0.000 | M = 10.581 
+|------------------------------------------------------------------------------------------------------------------|
+|       Fin-Init:                                                |   0.000 |   0.000 |   0.000 |   0.000 |         | 
+|------------------------------------------------------------------------------------------------------------------|
+|       Vertex:          nu_mu @ (x =     0.00000 m, y =     0.00000 m, z =     0.00000 m, t =    0.000000e+00 s)  |
+|------------------------------------------------------------------------------------------------------------------|
+| Err flag [bits:15->0] : 0000000000000000    |  1st set:                                                     none | 
+| Err mask [bits:15->0] : 1111111111111111    |  Is unphysical:    NO |   Accepted:   YES                          |
+|------------------------------------------------------------------------------------------------------------------|
+| sig(Ev) =       2.84231e-39 cm^2  | dsig(y;E)/dy =            2.93374e-39 cm^2       | Weight =          1.00000 |
+|------------------------------------------------------------------------------------------------------------------|
+
+--------------------------------------------------------------------------------------------------------------
+GENIE Interaction Summary
+--------------------------------------------------------------------------------------------------------------
+[-] [Init-State] 
+ |--> probe        : PDG-code = 14 (nu_mu)
+ |--> nucl. target : Z = 18, A = 40, PDG-Code = 1000180400 (Ar40)
+ |--> hit particle : no set
+ |--> hit quark    : no set
+ |--> probe 4P     : (E =   100.000000, Px =     0.000000, Py =     0.000000, Pz =   100.000000)
+ |--> target 4P    : (E =    37.215526, Px =     0.000000, Py =     0.000000, Pz =     0.000000)
+
+[-] [Process-Info]  
+ |--> Interaction : Weak[NC]
+ |--> Scattering  : NuEEL
+[-] [Kinematics]
+ |--> *Selected* Inelasticity y = 0.675272
+[-] [Exclusive Process Info] 
+ |--> charm prod.  : false |--> strange prod.  : false
+ |--> f/s nucleons : N(p) = 0 N(n) = 0
+ |--> f/s pions    : N(pi^0) = 0 N(pi^+) = 0 N(pi^-) = 0
+ |--> f/s Other    : N(gamma) = 0 N(Rho^0) = 0 N(Rho^+) = 0 N(Rho^-) = 0
+ |--> resonance    : [not set]
+ |--> final quark prod.  : false
+ |--> final lepton prod.  : false
+--------------------------------------------------------------------------------------------------------------
+
+
